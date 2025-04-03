@@ -282,7 +282,7 @@ body.no-scroll {
 
 /* ✅ FOOTER */
 .footer {
-  background-color: #000; /* Fond sombre */
+  background-color: #000; /* Fond noir */
   color: #fff; /* Texte en blanc */
   display: flex;
   justify-content: space-between; /* Pour séparer à gauche et à droite */
@@ -297,9 +297,28 @@ body.no-scroll {
 
 .footer-phone {
   font-size: 14px;
-  color: #fff; /* Couleur du numéro en blanc */
+  color: #fff; /* Couleur du numéro de téléphone en blanc */
+  text-decoration: none; /* Enlever la couleur bleue du lien */
 }
 
 .footer-phone:hover {
   text-decoration: underline; /* Souligner le numéro au survol */
+}
+
+/* ✅ Mobile Footer Adjustment */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Empile les éléments pour mobile */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-left {
+    margin-bottom: 10px; /* Espacement entre le copyright et le téléphone */
+  }
+
+  .footer-phone {
+    font-size: 16px; /* Légèrement plus grand sur mobile */
+    margin-top: 10px; /* Espacement entre les éléments */
+  }
 }
