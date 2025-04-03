@@ -279,3 +279,27 @@ body.no-scroll {
     padding: 0 10px;
   }
 }
+
+/* ✅ FOOTER */
+.footer {
+  background-color: #000; /* Fond sombre */
+  color: #fff; /* Texte en blanc */
+  display: flex;
+  justify-content: space-between; /* Pour séparer à gauche et à droite */
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 2px solid #701f35; /* Ligne de séparation en haut */
+}
+
+.footer-left {
+  font-size: 14px;
+}
+
+.footer-phone {
+  font-size: 14px;
+  color: #fff; /* Couleur du numéro en blanc */
+}
+
+.footer-phone:hover {
+  text-decoration: underline; /* Souligner le numéro au survol */
+}
