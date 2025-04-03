@@ -246,3 +246,23 @@ body.no-scroll {
 .slider-btn:hover {
   background-color: #eee;
 }
+/* ✅ SLIDER - Responsive pour mobile */
+@media (max-width: 768px) {
+  .slider-text h1 {
+    font-size: 28px;
+  }
+
+  .slider-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .slide-img {
+    height: 100vh;
+    object-position: center;
+  }
+
+  .slider-text {
+    padding: 0 10px;
+  }
+}
