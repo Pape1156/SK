@@ -282,10 +282,10 @@ body.no-scroll {
 
 /* ✅ FOOTER */
 .footer {
-  background-color: #000; /* Fond noir */
-  color: #fff; /* Texte en blanc */
+  background-color: #000;
+  color: #fff;
   display: flex;
-  justify-content: space-between; /* Pour séparer à gauche et à droite */
+  justify-content: space-between; /* Séparation entre les deux sections */
   align-items: center;
   padding: 10px 20px;
   border-top: 2px solid #701f35; /* Ligne de séparation en haut */
@@ -293,11 +293,12 @@ body.no-scroll {
 
 .footer-left {
   font-size: 14px;
+  text-align: left;
 }
 
 .footer-phone {
   font-size: 14px;
-  color: #fff; /* Couleur du numéro de téléphone en blanc */
+  color: #fff; /* Numéro de téléphone en blanc */
   text-decoration: none; /* Enlever la couleur bleue du lien */
 }
 
@@ -308,9 +309,10 @@ body.no-scroll {
 /* ✅ Mobile Footer Adjustment */
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column; /* Empile les éléments pour mobile */
-    text-align: center;
+    flex-direction: row; /* Garde la disposition en ligne pour mobile */
+    justify-content: space-between;
     padding: 20px;
+    text-align: left;
   }
 
   .footer-left {
@@ -319,6 +321,13 @@ body.no-scroll {
 
   .footer-phone {
     font-size: 16px; /* Légèrement plus grand sur mobile */
-    margin-top: 10px; /* Espacement entre les éléments */
+    color: #fff; /* Assurer que le numéro de téléphone soit blanc sur mobile */
+    margin-left: auto; /* Pousse le numéro à droite */
+  }
+
+  /* Spécifique pour éviter la couleur bleue des liens */
+  .footer-phone a {
+    color: #fff !important; /* Force la couleur blanche pour éviter le bleu des liens */
+    text-decoration: none;
   }
 }
