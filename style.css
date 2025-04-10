@@ -618,3 +618,163 @@ body.no-scroll {
     margin-top: 10px;
   }
 }
+
+/* ✅ SECTION FORMULAIRE + INFOS */
+.inscription-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* Ajoute de l’espace entre la carte et le formulaire */
+  padding: 50px 20px;
+  background: #ffffff; /* Fond blanc pour uniformiser */
+  border-radius: 10px;
+}
+
+/* ✅ Formulaire */
+.form-container {
+  width: 45%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #80002A;
+}
+
+/* ✅ Champs du formulaire */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* Ajout de la couleur pour les labels */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #80002A;
+  outline: none;
+}
+
+/* ✅ Bouton */
+.submit-button {
+  width: 100%;
+  background: #80002A;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background: #60001E;
+}
+
+/* ✅ SECTION INFOS À DROITE */
+.info-container {
+  width: 45%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-container h2 {
+  font-size: 24px;
+  color: #80002A;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-section h3 {
+  font-size: 18px;
+  color: #80002A;
+  margin-bottom: 5px;
+}
+
+.info-section p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ✅ Lien email */
+.info-section a {
+  color: #80002A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .inscription-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .form-container,
+  .info-container {
+      width: 90%;
+  }
+
+  /* Ajustement des étiquettes et du contenu mobile */
+  .form-group label {
+      font-size: 16px; /* Ajuste la taille des labels pour mobile */
+  }
+
+  .form-group input,
+  .form-group textarea {
+      font-size: 14px; /* Ajuste la taille du texte pour mieux s'adapter à l'écran mobile */
+  }
+
+  .submit-button {
+      font-size: 18px; /* Agrandit légèrement le texte du bouton sur mobile */
+      padding: 12px; /* Réduit un peu l'espace autour du bouton sur mobile */
+  }
+
+  .info-container h2 {
+      font-size: 20px; /* Ajuste le titre de la section d'infos */
+  }
+
+  .info-section h3 {
+      font-size: 16px; /* Ajuste les titres dans la section d'infos */
+  }
+
+  .info-section p {
+      font-size: 14px; /* Ajuste la taille du texte dans la section d'infos */
+  }
+}
