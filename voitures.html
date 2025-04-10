@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Automobile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Overlay pour menu -->
+  <div class="overlay"></div>
+
+  <!-- ✅ HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="menu-toggle">☰</div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="Logo1.jpg" alt="Logo SK Automobile" />
+        </a>
+      </div>
+      <div class="inscription-btn">
+        <a href="admissions.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ✅ MENU DE NAVIGATION -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="voitures.html">Nos Voitures</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ VOITURE 1 -->
+  <section class="car-3d-section">
+    <div class="car-3d-container">
+      <div class="car-3d-viewer" id="car1">
+        <div class="carousel-images">
+          <img src="IMG_3028.jpg" class="active" alt="Vue avant">
+          <img src="IMG_3029.jpg" alt="Vue arrière">
+          <img src="IMG_3030.jpg" alt="Vue latérale">
+          <img src="" alt="Vue intérieure">
+          <img src="" alt="Vue moteur">
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+
+      <div class="car-info">
+        <h2>Modèle : Peugeot 208</h2>
+        <p><strong>Prix :</strong> 8 500 €</p>
+        <p><strong>Kilométrage :</strong> 75 000 km</p>
+        <p><strong>Année :</strong> 2018</p>
+        <div class="car-description">
+          <h3>Descriptif</h3>
+          <p>
+            Super citadine économique, idéale pour la ville comme pour les trajets quotidiens.<br>
+            Design moderne, faible consommation et très bon état général. Disponible immédiatement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ✅ VOITURE 1 -->
+    <section class="car-3d-section">
+        <div class="car-3d-container">
+          <div class="car-3d-viewer" id="car1">
+            <div class="carousel-images">
+              <img src="IMG_3025.jpg" class="active" alt="Vue avant">
+              <img src="IMG_3026.jpg" alt="Vue arrière">
+              <img src="IMG_3027.jpg" alt="Vue latérale">
+              <img src="" alt="Vue intérieure">
+              <img src="" alt="Vue moteur">
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+          </div>
+    
+          <div class="car-info">
+            <h2>Modèle : Peugeot 208</h2>
+            <p><strong>Prix :</strong> 8 500 €</p>
+            <p><strong>Kilométrage :</strong> 75 000 km</p>
+            <p><strong>Année :</strong> 2018</p>
+            <div class="car-description">
+              <h3>Descriptif</h3>
+              <p>
+                Super citadine économique, idéale pour la ville comme pour les trajets quotidiens.<br>
+                Design moderne, faible consommation et très bon état général. Disponible immédiatement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- ✅ LIGHTBOX POUR AGRANDIR L'IMAGE -->
+  <div class="lightbox-overlay" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img src="" alt="Image zoomée" class="lightbox-img">
+  </div>
+
+  <!-- ✅ SCRIPTS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".car-3d-viewer").forEach((carousel) => {
+        const images = carousel.querySelectorAll(".carousel-images img");
+        const prevBtn = carousel.querySelector(".carousel-btn.prev");
+        const nextBtn = carousel.querySelector(".carousel-btn.next");
+        let current = 0;
+
+        function showImage(index) {
+          images.forEach((img, i) => {
+            img.classList.remove("active");
+            img.style.left = "100%";
+          });
+          images[index].classList.add("active");
+          images[index].style.left = "0";
+        }
+
+        prevBtn.addEventListener("click", () => {
+          current = (current - 1 + images.length) % images.length;
+          showImage(current);
+        });
+
+        nextBtn.addEventListener("click", () => {
+          current = (current + 1) % images.length;
+          showImage(current);
+        });
+
+        showImage(current);
+      });
+
+      // ✅ LIGHTBOX IMAGE CLICK
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = lightbox.querySelector(".lightbox-img");
+      const closeBtn = lightbox.querySelector(".lightbox-close");
+
+      document.querySelectorAll(".carousel-images img").forEach((img) => {
+        img.addEventListener("click", () => {
+          lightboxImg.src = img.src;
+          lightbox.classList.add("active");
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+      });
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          lightbox.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
+  <!-- ✅ FOOTER -->
+  <footer class="footer">
+    <p class="footer-left">Copyright © 2025 | Groupe Sk AUTOMOBILE - Tous droits réservés</p>
+    <p class="footer-phone">Tel: 0760432695</p>
+  </footer>
+
+  <script src="java.js"></script>
+  <script src="slider.js"></script>
+</body>
+</html>
