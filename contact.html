@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Automobile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Overlay pour menu -->
+  <div class="overlay"></div>
+
+  <!-- ✅ HEADER -->
+  <header>
+    <div class="header-container">
+
+      <!-- ✅ Menu hamburger à gauche -->
+      <div class="menu-toggle">☰</div>
+
+      <!-- ✅ Logo centré avec lien vers l’accueil -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="Logo1.jpg" alt="Logo SK Automobile" />
+        </a>
+      </div>
+
+      <!-- ✅ Bouton "Contact" à droite -->
+      <div class="inscription-btn">
+        <a href="voitures.html">Contact</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ✅ MENU DE NAVIGATION -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="voitures.html">Nos Voitures</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+<!-- ✅ SECTION ADMISSION -->
+<section class="inscription-container">
+    <!-- ✅ Formulaire à gauche -->
+    <div class="form-container">
+        <h2>Formulaire</h2> <!-- Title changed to Formulaire as requested -->
+        <form action="https://formsubmit.co/pape01570@gmail.com" method="POST">
+            <!-- ✅ Anti-spam -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://pape1156.github.io/papeproject/success1.html">
+
+            <div class="form-group">
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Numéro de téléphone :</label>
+                <input type="tel" id="telephone" name="phone" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="motivation">Informations supplémentaires :</label>
+                <textarea id="motivation" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Envoyer la demande</button>
+        </form>
+    </div>
+
+    <!-- ✅ Section d'infos à droite -->
+    <div class="info-container">
+        <h2>Informations Importantes</h2>
+        
+        <!-- ✅ Section Prise de rendez-vous -->
+        <div class="info-section">
+            <h3>📅 Prise de Rendez-vous</h3>
+            <p>Planifiez un rendez-vous pour voir nos véhicules en personne et discuter des offres.</p>
+            <p><strong>📞 Téléphone :</strong> <a href="tel:+330758488512">0758488512</a></p>
+        </div>
+        
+        <!-- ✅ Section Partenariat -->
+        <div class="info-section">
+            <h3>🤝 Partenariat</h3>
+            <p>Vous êtes intéressé par un partenariat avec nous ? Contactez-nous pour plus d'informations.</p>
+            <p><strong>📧 Email :</strong> <a href="mailto:contact@skautomobile.com">contact@skautomobile.com</a></p>
+        </div>
+
+        <!-- ✅ Section Informations supplémentaires -->
+        <div class="info-section">
+            <h3>💬 Informations Supplémentaires</h3>
+            <p>Des détails supplémentaires sur les véhicules, les financements ou toute autre question sont les bienvenus.</p>
+            <p><strong>📧 Email :</strong> <a href="mailto:info@skautomobile.com">info@skautomobile.com</a></p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ✅ FOOTER -->
+<footer class="footer">
+  <p class="footer-left">Copyright © 2025 | Groupe Sk AUTOMOBILE - Tous droits réservés</p>
+  <p class="footer-phone">Tel: 0760432695</p>
+</footer>
+  <!-- ✅ JS -->
+  <script src="java.js"></script>
+  <script src="slider.js"></script>
+</body>
+</html>
