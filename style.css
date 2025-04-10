@@ -362,9 +362,9 @@ body.no-scroll {
     font-weight: bold;
     color: #333;
     text-align: center;
-    margin-top: 20px; /* Moins d'espace au-dessus pour mobile */
-    margin-bottom: 10px; /* Moins d'espace en bas */
-    padding-top: 5px; /* Moins de padding pour que ce soit plus aéré */
+    margin-top: 40px; /* Augmenter l'espace au-dessus pour mobile */
+    margin-bottom: 20px; /* Augmenter l'espace en bas pour mieux espacer */
+    padding-top: 10px; /* Un peu plus d'espace pour que ce soit plus aéré */
   }
 
   /* Ligne de séparation */
@@ -376,6 +376,7 @@ body.no-scroll {
     width: 80%;
   }
 }
+
 .car-3d-section {
   padding: 100px 20px 60px;
   background-color: #f5f5f5;
