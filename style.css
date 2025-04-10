@@ -354,6 +354,28 @@ body.no-scroll {
   margin: 0 auto 40px auto;  /* Augmenter la marge en bas de la ligne pour espacer les éléments */
   width: 80%;
 }
+
+/* Section de Nos véhicules pour mobile */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 24px; /* Taille du texte un peu plus petite pour mobile */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px; /* Moins d'espace au-dessus pour mobile */
+    margin-bottom: 10px; /* Moins d'espace en bas */
+    padding-top: 5px; /* Moins de padding pour que ce soit plus aéré */
+  }
+
+  /* Ligne de séparation */
+  .section-divider {
+    border: 0;
+    height: 2px;
+    background-color: #8b0000;
+    margin: 0 auto 20px auto; /* Moins de marge en bas pour mobile */
+    width: 80%;
+  }
+}
 .car-3d-section {
   padding: 100px 20px 60px;
   background-color: #f5f5f5;
