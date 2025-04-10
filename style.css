@@ -362,9 +362,9 @@ body.no-scroll {
     font-weight: bold;
     color: #333;
     text-align: center;
-    margin-top: 40px; /* Augmenter l'espace au-dessus pour mobile */
-    margin-bottom: 20px; /* Augmenter l'espace en bas pour mieux espacer */
-    padding-top: 10px; /* Un peu plus d'espace pour que ce soit plus aéré */
+    margin-top: 60px; /* Beaucoup plus d'espace en haut pour mobile */
+    margin-bottom: 20px; /* Espacement en bas pour séparer */
+    padding-top: 15px; /* Un peu plus de padding pour que ce soit plus aéré */
   }
 
   /* Ligne de séparation */
@@ -372,7 +372,7 @@ body.no-scroll {
     border: 0;
     height: 2px;
     background-color: #8b0000;
-    margin: 0 auto 20px auto; /* Moins de marge en bas pour mobile */
+    margin: 0 auto 40px auto; /* Espacement au bas de la ligne pour mieux espacer */
     width: 80%;
   }
 }
