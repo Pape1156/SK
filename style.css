@@ -333,6 +333,27 @@ body.no-scroll {
 }
 
 /* ✅ SECTION VOITURE 3D */
+
+/* Section de Nos véhicules */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 60px;  /* Augmentation de l'espace au-dessus du titre pour qu'il respire mieux */
+  margin-bottom: 20px;
+  padding-top: 10px;
+  z-index: 10;
+}
+
+/* Ligne de séparation */
+.section-divider {
+  border: 0;
+  height: 2px;
+  background-color: #8b0000;
+  margin: 0 auto 40px auto;  /* Augmenter la marge en bas de la ligne pour espacer les éléments */
+  width: 80%;
+}
 .car-3d-section {
   padding: 100px 20px 60px;
   background-color: #f5f5f5;
@@ -476,20 +497,7 @@ body.no-scroll {
   border-radius: 8px;
   box-shadow: 0 0 15px
 }
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-.section-divider {
-  border: 0;
-  height: 2px;
-  background-color: #000;
-  margin-bottom: 40px;
-}
 @media (max-width: 768px) {
   .car-3d-container {
     display: flex;
