@@ -476,6 +476,7 @@ body.no-scroll {
   border-radius: 8px;
   box-shadow: 0 0 15px
 }
+
 @media (max-width: 768px) {
   .car-3d-container {
     display: flex;
