@@ -476,58 +476,79 @@ body.no-scroll {
   border-radius: 8px;
   box-shadow: 0 0 15px
 
-/* ✅ Responsive */
-@media (max-width: 768px) {
-  .car-3d-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+  @media (max-width: 768px) {
+    .car-3d-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+    }
+  
+    .car-3d-viewer {
+      width: 100%;
+      max-width: 95%;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+  
+    .carousel-images {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  
+    .carousel-images img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+    }
+  
+    .carousel-images img.active {
+      transform: scale(1);
+    }
+  
+    .carousel-btn {
+      top: 45%;
+      background: rgba(255, 255, 255, 0.85);
+      font-size: 22px;
+      padding: 8px 12px;
+    }
+  
+    .car-info {
+      width: 100%;
+      max-width: 95%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+  
+    .car-info h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #111;
+    }
+  
+    .car-info p {
+      font-size: 17px;
+      margin: 8px 0;
+      color: #444;
+    }
+  
+    .car-description h3 {
+      font-size: 18px;
+      color: #800020;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .car-description p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
   }
-
-  .car-3d-viewer,
-  .car-info {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .carousel-images {
-    height: 300px;
-  }
-
-  .car-info h2 {
-    font-size: 22px;
-  }
-
-  .car-info p {
-    font-size: 16px;
-  }
-
-  .car-description h3 {
-    font-size: 18px;
-  }
-
-  .car-description p {
-    font-size: 15px;
-  }
-
-  /* ✅ Footer adapté pour mobile */
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 15px;
-    font-size: 14px;
-    gap: 10px;
-  }
-
-  .footer-left,
-  .footer-phone {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  .footer-phone {
-    font-weight: bold;
-    color: #80002A;
-  }
-}
