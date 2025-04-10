@@ -509,4 +509,25 @@ body.no-scroll {
   .car-description p {
     font-size: 15px;
   }
+
+  /* ✅ Footer adapté pour mobile */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .footer-left,
+  .footer-phone {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .footer-phone {
+    font-weight: bold;
+    color: #80002A;
+  }
 }
