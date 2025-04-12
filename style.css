@@ -837,3 +837,215 @@ body, html {
     font-size: 14px; /* Réduit la taille du texte dans les sections */
   }
 }
+
+/* ✅ SECTION QUI SOMMES-NOUS */
+
+
+/* ✅ SECTION NOTRE HISTOIRE */
+.history-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f8f8f8;
+}
+
+.history-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+.history-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.history-container p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* ✅ SECTION VALEURS & MISSION */
+.values-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: white;
+}
+
+/* ✅ Titre */
+.values-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+/* ✅ Conteneur flexible */
+.values-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap; /* Empêche les cartes de passer en colonne */
+  max-width: 1200px; /* Fixe une largeur max pour éviter l'étalement */
+  margin: auto; /* Centre le conteneur */
+}
+
+/* ✅ Cartes des valeurs */
+.value-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px; /* Taille plus grande */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✅ Ajout d'effet hover (animation fluide) */
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Icônes et animation */
+.value-card img {
+  width: 100px; /* Icônes plus grandes */
+  height: 100px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover img {
+  transform: scale(1.1);
+}
+
+/* ✅ Titres */
+.value-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ✅ Texte descriptif */
+.value-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* ✅ Responsive : Passage en colonne sur téléphone */
+@media (max-width: 768px) {
+  .values-container {
+      flex-direction: column; /* Cartes en colonne */
+      align-items: center; /* Centrage des cartes */
+      gap: 20px; /* Moins d’espace entre les cartes */
+  }
+
+  .value-card {
+      width: 90%; /* Largeur plus grande pour s’adapter au mobile */
+      max-width: 400px; /* Empêcher les cartes de devenir trop larges */
+      padding: 20px;
+  }
+
+  .value-card h3 {
+      font-size: 18px;
+  }
+
+  .value-card p {
+      font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+.qui-sommes-nous-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 80px; /* Décalage pour ne pas être caché par le header */
+}
+
+/* ✅ Titre principal */
+.qui-sommes-nous-container h2 {
+  font-size: 28px;
+  color: #80002a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ✅ Paragraphe de description */
+.qui-sommes-nous-container p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* ✅ Liste des informations importantes */
+.information-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.info-section {
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-section h3 {
+  font-size: 20px;
+  color: #80002a;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ✅ Lien Email */
+.info-section a {
+  color: #80002a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .qui-sommes-nous-container {
+    padding: 20px;
+  }
+
+  .information-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-section {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
