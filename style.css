@@ -794,7 +794,6 @@ body, html {
 .back-to-home-button:hover {
   background-color: #60001E; /* Couleur sombre au survol */
 }
-
 /* ✅ Responsive */
 @media (max-width: 768px) {
   /* Ajuste la disposition pour les écrans plus petits */
@@ -807,7 +806,7 @@ body, html {
 
   .form-container,
   .info-container {
-    width: 100%; /* Prend toute la largeur de l'écran */
+    width: 90%; /* Réduit la largeur du formulaire et des informations */
     padding: 15px; /* Ajuste le padding pour une meilleure lisibilité */
   }
 
