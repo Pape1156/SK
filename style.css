@@ -961,91 +961,110 @@ body, html {
 
 
 
-
-
-
-
-.qui-sommes-nous-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 80px; /* Décalage pour ne pas être caché par le header */
+/* ✅ Section Équipe */
+.team {
+  text-align: center;
+  padding: 100px 20px; /* Augmente l'espace au-dessus et en dessous du titre */
+  background: #f8f8f8;
+  position: relative;
 }
 
-/* ✅ Titre principal */
-.qui-sommes-nous-container h2 {
+.team h2 {
   font-size: 28px;
-  color: #80002a;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* ✅ Paragraphe de description */
-.qui-sommes-nous-container p {
-  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 50px; /* Augmente l'espace sous le titre */
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color: #333;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  text-align: center;
-  max-width: 800px;
+  position: relative;
 }
 
-/* ✅ Liste des informations importantes */
+/* ✅ Ajout du trait sous le titre */
+.team h2::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: #80002A;
+  display: block;
+  margin: 15px auto 0; /* Augmente l'espace entre le titre et le trait */
+  border-radius: 2px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.member {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 230px;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.member p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+/* ✅ SECTION INFORMATIONS IMPORTANTES */
+.information-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
 .information-container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.information-left,
+.information-right {
+  width: 48%; /* Chaque section prend environ la moitié de l'espace */
 }
 
 .info-section {
-  width: 45%;
-  background-color: #f9f9f9;
-  padding: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .info-section h3 {
   font-size: 20px;
-  color: #80002a;
+  color: #80002A;
   margin-bottom: 10px;
 }
 
 .info-section p {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
-  line-height: 1.6;
 }
 
-/* ✅ Lien Email */
-.info-section a {
-  color: #80002a;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.info-section a:hover {
-  text-decoration: underline;
-}
-
-/* ✅ Responsive */
-@media (max-width: 768px) {
-  .qui-sommes-nous-container {
-    padding: 20px;
-  }
-
-  .information-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-section {
-    width: 80%;
-    margin-bottom: 20px;
-  }
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
