@@ -806,7 +806,7 @@ body, html {
 
   .form-container,
   .info-container {
-    width: 90%; /* Réduit la largeur du formulaire et des informations */
+    width: 100%; /* Prend toute la largeur de l'écran */
     padding: 15px; /* Ajuste le padding pour une meilleure lisibilité */
   }
 
@@ -819,6 +819,8 @@ body, html {
   .form-group input,
   .form-group textarea {
     font-size: 14px; /* Réduit la taille des champs pour une meilleure lisibilité */
+    width: 100%; /* Assure que les champs ne dépassent pas du conteneur */
+    box-sizing: border-box; /* Permet d'inclure le padding et la bordure dans la largeur */
   }
 
   .submit-button {
