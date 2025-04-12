@@ -797,21 +797,42 @@ body, html {
 
 /* ✅ Responsive */
 @media (max-width: 768px) {
-  .thank-you-container {
-    padding: 15px;
-    margin: 20px;
+  /* Ajuste la disposition pour les écrans plus petits */
+  .inscription-container {
+    flex-direction: column; /* Met le formulaire au-dessus et les informations en bas */
+    align-items: center; /* Centre le contenu */
+    gap: 20px; /* Espacement réduit entre le formulaire et les informations */
+    padding: 20px; /* Réduit l'espace autour */
   }
 
-  .thank-you-container h2 {
-    font-size: 24px;
+  .form-container,
+  .info-container {
+    width: 100%; /* Prend toute la largeur de l'écran */
+    padding: 15px; /* Ajuste le padding pour une meilleure lisibilité */
   }
 
-  .thank-you-container p {
-    font-size: 14px;
+  .form-container h2,
+  .info-container h2 {
+    font-size: 20px; /* Ajuste la taille des titres */
   }
 
-  .back-to-home-button {
-    font-size: 14px;
-    padding: 10px 20px;
+  /* Ajuste la taille des champs du formulaire et du bouton */
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px; /* Réduit la taille des champs pour une meilleure lisibilité */
+  }
+
+  .submit-button {
+    font-size: 14px; /* Réduit la taille du bouton */
+    padding: 12px; /* Réduit la taille du bouton */
+  }
+
+  /* Ajuste les titres des sections d'information */
+  .info-section h3 {
+    font-size: 16px; /* Réduit la taille des titres des sections */
+  }
+
+  .info-section p {
+    font-size: 14px; /* Réduit la taille du texte dans les sections */
   }
 }
